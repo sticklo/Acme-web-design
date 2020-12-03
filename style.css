@@ -8,7 +8,7 @@ body {
 /*Global*/
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: auto;
 	overflow: hidden;
 }
@@ -22,10 +22,11 @@ ul {
 .button_1 {
 	height: 38px;
 	background:#e8491d;
-	border:0;
+	border: 0;
 	padding-left: 20px;
 	padding-right: 20px;
 	color:#ffffff;
+	outline: 0;
 }
 
 
@@ -104,13 +105,19 @@ header a:hover{
 
 /*Newsletter*/
 #newsletter {
-	padding: 15px;
+	padding: 10px 2px;
 	color: #ffffff;
 	background:#35424a;
 }
 
+#newsletter .container {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
 #newsletter h1 {
 	float: left;
+	margin-right: 5px;
 }
 
 #newsletter form {
@@ -120,10 +127,11 @@ header a:hover{
 }
 
 
-#newsletter input [type="email"]{
-	padding: 4px;
-	height: 25px;
+#newsletter input {
+	padding: 4px 10px;
+	height: 27.5px;
 	width: 250px;
+	outline: 0;
 
 }
 
@@ -152,14 +160,26 @@ header a:hover{
 aside#sidebar{
 	float: right;
 	width: 30%;
-	margin-top: 10px;
-
+	margin-top: 50px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
-	width: 90%
-	padding:5px;
+aside#sidebar input {
+	height: 40px;
+	width: 95%;
+	outline: 0;
+	padding: 2px 0px 2px 5px;
 }
+aside#sidebar textarea {
+	max-width: 95%;
+	min-width: 95%;
+	outline: 0;
+	padding: 10px 0px 10px 5px;
+	font-family: Arial, Haelvetica, sans-serif;
+}
+/* aside#sidebar .quote input, aside#sidebar .quote textarea{
+	width: 90%;
+	padding: 5px;
+} */
 
 /* Main-col*/
 
@@ -197,11 +217,15 @@ footer {
 	aside#sidebar {
 		float:none;
 		text-align: center;
-		width: 100px;
+		width: 100%;
 	}
 
 	header {
 		padding-bottom: 20px; 
+	}
+
+	header li {
+		padding: 0 10px;
 	}
 
 	#showcase h1{
